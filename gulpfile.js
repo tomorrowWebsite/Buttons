@@ -22,11 +22,11 @@ gulp.task("html", function () {
 // ===== Task Scss Ar =====
 gulp.task("scss", function () {
   return gulp
-    .src("project/scss-ar/*.scss")
+    .src("project/scss/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer("last 20 versions"))
-    .pipe(concat("style-ar.css"))
+    .pipe(concat("style.css"))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("dist/css"))
     .pipe(livereload())
