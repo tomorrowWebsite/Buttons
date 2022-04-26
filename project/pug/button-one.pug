@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet" href="css/style.css")
+    // Start Prism
+    link(rel="stylesheet" href="css/libs/prism/prism.css")
+    // End Prism
+
+  body(class='view')
+    div(class='element-and-html')
+      div(class='element')
+        button(class='content-one') Button
+      div(class='html')
+        script(type="text/plain" class="language-html")
+          |<button>Click</button>
+    script(type="text/plain" class="language-css")
+      |
+  // Start Prism
+  //- Write code Like Vscode
+  script(src="js/libs/prism/prism.js")
+  //- script(src='https://elzero.org/wp-content/themes/elzero/js/prism.js') 
+  // End Prism
+
+  script(src="http://localhost:35729/livereload.js")

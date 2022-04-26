@@ -1,3 +1,10 @@
+// Global
+.view {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 // base
 button {
   cursor: pointer;
@@ -5,11 +12,11 @@ button {
 .content-one {
   padding: 1rem 2rem;
   font-weight: 700;
-  background: rgb(255, 255, 255);
-  color: blueviolet;
+  background: #ffffff;
+  color: #432be2;
   border-radius: 0.5rem;
-  border-bottom: 2px solid blueviolet;
-  border-right: 2px solid blueviolet;
+  border-bottom: 2px solid #2b31e2;
+  border-right: 2px solid #3a2be2;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
   // For Testing property
@@ -18,11 +25,10 @@ button {
   transition-property: border-top, border-left, border-bottom, border-right,
     box-shadow;
   &:hover {
-    border-top: 2px solid blueviolet;
-    border-left: 2px solid blueviolet;
-    border-bottom: 2px solid rgb(238, 103, 238);
-    border-right: 2px solid rgb(238, 103, 238);
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
-      rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+    border-top: 2px solid #2b49e2;
+    border-left: 2px solid #2b3ae2;
+    border-bottom: 2px solid #6777ee;
+    border-right: 2px solid #6784ee;
+    box-shadow: #2e35f066 5px 5px, #2e3bf04d 10px 10px, #352ef033 15px 15px;
   }
 }
